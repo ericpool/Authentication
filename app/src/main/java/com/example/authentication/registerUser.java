@@ -38,7 +38,7 @@ public class registerUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_register_user);
-        
+
     }
     public void imageClick(View v)
     {
@@ -53,6 +53,10 @@ public class registerUser extends AppCompatActivity {
 
         if(fnameET.getText().toString().isEmpty() || lnameET.getText().toString().isEmpty() || passwordET.getText().toString().isEmpty() || emailET.getText().toString().isEmpty())
         {
+            Toast.makeText(this, "Fields are Empty", Toast.LENGTH_SHORT).show();
+
+        }
+        else {
             fullname = fnameET.getText().toString() + " " + lnameET.getText().toString();
             if(!passwordET.getText().toString().equals(confirmPasswordET.getText().toString())) {
                 Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
@@ -63,9 +67,6 @@ public class registerUser extends AppCompatActivity {
 
 
             }
-        }
-        else {
-            Toast.makeText(this, "Fields are Empty", Toast.LENGTH_SHORT).show();
         }
 
 

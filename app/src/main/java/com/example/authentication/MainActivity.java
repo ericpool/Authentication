@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickGoTo(View v)
     {
-        Intent i = new Intent(MainActivity.this, profileInfo.class);
+        Intent i = new Intent(MainActivity.this, registerUser.class);
         MainActivity.this.startActivity(i);
     }
 
