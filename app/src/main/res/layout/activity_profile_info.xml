@@ -1,0 +1,80 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".profileInfo">
+
+    <EditText
+        android:id="@+id/lnameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/fnameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameET"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:inputType="text"
+        tools:text="Create your profile" />
+    <TextView
+        android:id="@+id/imagetext"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lnameET"
+        android:layout_marginTop="17dp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:textSize="14sp"
+        tools:text="Profile Picture" />
+
+    <Button
+        android:id="@+id/submitET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textview"
+        android:layout_toRightOf="@+id/textview"
+        android:onClick="onClickSubmit"
+        android:text="Submit" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imagetext"
+        android:layout_alignEnd="@+id/submitET"
+        android:layout_alignRight="@+id/submitET"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/user"
+        android:onClick="onClickImage" />
+
+</RelativeLayout>
